@@ -291,17 +291,21 @@ marquee{
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 @media(max-width:768px){
   .about-grid{
     flex-direction:column;
   }
-
-  .toast {
-  animation: slideIn 0.5s ease;
-  border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
   .contact-grid{
     grid-template-columns:1fr;
   }
