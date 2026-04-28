@@ -245,6 +245,37 @@ marquee{
   text-align:center;
   padding:15px;
 }
+#modalImg {
+  border-radius: 10px;
+}
+.dark-mode {
+  background:#121212;
+  color:white;
+}
+
+.dark-mode .header {
+  background:#000;
+}
+
+.dark-mode .card,
+.dark-mode .stat-card {
+  background:#1e1e1e;
+  color:white;
+}
+
+.dark-mode .footer {
+  background:#000;
+}
+
+.custom-btn {
+  background-color: #e8171d !important;
+  color: white !important;
+  border: none !important;
+}
+
+.custom-btn:hover {
+  background-color: #c91418 !important;
+}
 
 @keyframes fadeDown{
   from{opacity:0; transform:translateY(-20px);}
@@ -261,6 +292,11 @@ marquee{
     flex-direction:column;
   }
 
+  .toast {
+  animation: slideIn 0.5s ease;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
   .contact-grid{
     grid-template-columns:1fr;
   }
